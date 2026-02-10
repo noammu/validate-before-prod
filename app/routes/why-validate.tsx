@@ -1,14 +1,14 @@
-import { PageLayout } from '../components/page-layout';
-import { AlertCircle, CheckCircle2 } from 'lucide-react';
-import styles from './why-validate.module.css';
-import type { Route } from './+types/why-validate';
+import { PageLayout } from "../components/page-layout";
+import { AlertCircle, CheckCircle2 } from "lucide-react";
+import styles from "./why-validate.module.css";
+import type { Route } from "./+types/why-validate";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'Why Validate Features? - Feature Vetta' },
+    { title: "Why Validate Features? - Feature Vetta" },
     {
-      name: 'description',
-      content: 'Learn the critical reasons for validating features and the risks of skipping validation.',
+      name: "description",
+      content: "Learn the critical reasons for validating features and the risks of skipping validation.",
     },
   ];
 }
@@ -19,10 +19,11 @@ export default function WhyValidate() {
       <div className={styles.container}>
         <header className={styles.header}>
           <h1 className={styles.title}>Why Validate Features?</h1>
+          <h1 className={styles.title}>This came from remote woohoo!</h1>
           <p className={styles.intro}>
-            Feature validation is not just a best practice—it's a critical safeguard
-            that protects your users, your business, and your reputation. Understanding
-            why validation matters is the first step toward building more reliable software.
+            Feature validation is not just a best practice—it's a critical safeguard that protects your users, your
+            business, and your reputation. Understanding why validation matters is the first step toward building more
+            reliable software.
           </p>
         </header>
 
@@ -30,9 +31,8 @@ export default function WhyValidate() {
           <h2 className={styles.sectionTitle}>The Impact of Poor Validation</h2>
           <div className={styles.content}>
             <p>
-              Deploying features without proper validation can have severe consequences
-              that ripple through your entire organization. The costs of inadequate
-              validation often far exceed the investment required to do it right.
+              Deploying features without proper validation can have severe consequences that ripple through your entire
+              organization. The costs of inadequate validation often far exceed the investment required to do it right.
             </p>
           </div>
 
@@ -43,9 +43,8 @@ export default function WhyValidate() {
                 Critical Bugs in Production
               </h3>
               <p className={styles.impactDescription}>
-                Unvalidated features can introduce critical bugs that affect core
-                functionality, leading to system failures, data corruption, and
-                emergency rollbacks that disrupt operations.
+                Unvalidated features can introduce critical bugs that affect core functionality, leading to system
+                failures, data corruption, and emergency rollbacks that disrupt operations.
               </p>
             </li>
 
@@ -55,9 +54,8 @@ export default function WhyValidate() {
                 User Dissatisfaction & Churn
               </h3>
               <p className={styles.impactDescription}>
-                Poor user experiences caused by unvalidated features erode trust,
-                damage brand reputation, and drive users to competitors. Rebuilding
-                lost trust is exponentially harder than preventing its loss.
+                Poor user experiences caused by unvalidated features erode trust, damage brand reputation, and drive
+                users to competitors. Rebuilding lost trust is exponentially harder than preventing its loss.
               </p>
             </li>
 
@@ -67,9 +65,8 @@ export default function WhyValidate() {
                 Revenue Loss & Business Impact
               </h3>
               <p className={styles.impactDescription}>
-                Downtime, broken checkout flows, or degraded performance directly
-                impact revenue. Even brief outages can result in significant financial
-                losses and missed opportunities.
+                Downtime, broken checkout flows, or degraded performance directly impact revenue. Even brief outages can
+                result in significant financial losses and missed opportunities.
               </p>
             </li>
 
@@ -79,9 +76,8 @@ export default function WhyValidate() {
                 Increased Support Costs
               </h3>
               <p className={styles.impactDescription}>
-                Unvalidated features generate support tickets, consume team resources,
-                and create technical debt. The time spent firefighting could have been
-                invested in innovation and growth.
+                Unvalidated features generate support tickets, consume team resources, and create technical debt. The
+                time spent firefighting could have been invested in innovation and growth.
               </p>
             </li>
 
@@ -91,9 +87,8 @@ export default function WhyValidate() {
                 Team Morale & Productivity
               </h3>
               <p className={styles.impactDescription}>
-                Constant production issues demoralize teams, create a culture of fear,
-                and reduce overall productivity. Teams spend more time fixing problems
-                than building new features.
+                Constant production issues demoralize teams, create a culture of fear, and reduce overall productivity.
+                Teams spend more time fixing problems than building new features.
               </p>
             </li>
           </ul>
@@ -103,10 +98,9 @@ export default function WhyValidate() {
           <h2 className={styles.sectionTitle}>The Importance of Early Detection</h2>
           <div className={styles.content}>
             <p>
-              Validation enables early detection of issues when they're easiest and
-              least expensive to fix. The cost of fixing a bug increases exponentially
-              as it moves through the development lifecycle—from development to staging
-              to production.
+              Validation enables early detection of issues when they're easiest and least expensive to fix. The cost of
+              fixing a bug increases exponentially as it moves through the development lifecycle—from development to
+              staging to production.
             </p>
           </div>
 
@@ -117,8 +111,8 @@ export default function WhyValidate() {
                 Catch Issues Before Users Do
               </h3>
               <p className={styles.benefitDescription}>
-                Validation processes identify problems in controlled environments where
-                they can be addressed without impacting real users or business operations.
+                Validation processes identify problems in controlled environments where they can be addressed without
+                impacting real users or business operations.
               </p>
             </li>
 
@@ -128,9 +122,8 @@ export default function WhyValidate() {
                 Reduce Fix Costs
               </h3>
               <p className={styles.benefitDescription}>
-                Issues caught during validation are significantly cheaper to fix than
-                production bugs, which often require emergency responses, rollbacks,
-                and extensive remediation.
+                Issues caught during validation are significantly cheaper to fix than production bugs, which often
+                require emergency responses, rollbacks, and extensive remediation.
               </p>
             </li>
 
@@ -140,9 +133,8 @@ export default function WhyValidate() {
                 Build Confidence
               </h3>
               <p className={styles.benefitDescription}>
-                Thorough validation gives teams confidence in their deployments,
-                enabling faster iteration and reducing the fear and stress associated
-                with releasing new features.
+                Thorough validation gives teams confidence in their deployments, enabling faster iteration and reducing
+                the fear and stress associated with releasing new features.
               </p>
             </li>
 
@@ -152,9 +144,8 @@ export default function WhyValidate() {
                 Improve Quality Over Time
               </h3>
               <p className={styles.benefitDescription}>
-                Validation processes create feedback loops that help teams learn from
-                issues, improve development practices, and continuously raise quality
-                standards across the organization.
+                Validation processes create feedback loops that help teams learn from issues, improve development
+                practices, and continuously raise quality standards across the organization.
               </p>
             </li>
 
@@ -164,9 +155,8 @@ export default function WhyValidate() {
                 Enable Data-Driven Decisions
               </h3>
               <p className={styles.benefitDescription}>
-                Validation provides metrics and insights that inform better decisions
-                about feature design, performance optimization, and user experience
-                improvements.
+                Validation provides metrics and insights that inform better decisions about feature design, performance
+                optimization, and user experience improvements.
               </p>
             </li>
           </ul>
