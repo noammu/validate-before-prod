@@ -1,6 +1,7 @@
 .hero {
   padding: var(--space-9) 0 var(--space-8);
   text-align: center;
+  background-color: var(--color-neutral-8);
 }
 
 .heroTitle {
