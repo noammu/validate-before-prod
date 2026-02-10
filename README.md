@@ -1,63 +1,76 @@
-# Welcome to React Router!
+# Feature Vetta
 
-A modern, production-ready template for building full-stack React applications using React Router.
+An educational web application designed to highlight the critical importance of thoroughly validating new features before their deployment to a production environment.
+
+## Overview
+
+Feature Vetta informs users about best practices and benefits associated with pre-production feature validation through a clean, professional, and accessible interface.
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 CSS Modules for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- **Content Display**: Informational articles and explanations on feature validation importance and methods
+- **Navigation**: Browse between different topics and informational pages
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Accessible**: WCAG AA compliant with high contrast ratios and semantic HTML
 
-### Styling & Theming
+## Pages
 
-- This project uses CSS modules as the styling solution, Radix as the component library, and Open Props for styling tokens and theming
-- Project theme is defined in `app/styles/theme.css`, used as a design system for all UI building
-- Base design tokens are defined in `app/styles/tokens/<token-type>.css`, used as an immutable base design system for all the theme and all UI
+- **Home** (`/`) - Introduction and overview of feature validation topics
+- **Why Validate?** (`/why-validate`) - Explains risks and importance of validation
+- **Validation Methods** (`/methods`) - Overview of validation strategies and techniques
+- **Benefits** (`/benefits`) - Organizational and user experience advantages
+
+## Technology Stack
+
+- React 19
+- TypeScript
+- React Router v7
+- CSS Modules
+- Lucide React Icons
+
+## Design System
+
+- **Typography**: Outfit (headings) & Karla (body)
+- **Color Palette**: Teal accent with slate neutrals
+- **Layout**: Clean, generous white space with structured grid
+- **Components**: Subtle, functional with soft corners
 
 ## Getting Started
 
-### Installation
-
-Install the dependencies:
-
 ```bash
+# Install dependencies
 npm install
-```
 
-### Development
-
-Start the development server with HMR:
-
-```bash
+# Start development server
 npm run dev
-```
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
+# Build for production
 npm run build
+
+# Start production server
+npm start
 ```
 
-## Deployment
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+## Project Structure
 
 ```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+app/
+├── components/          # Reusable components
+│   ├── header.tsx      # Site navigation
+│   ├── footer.tsx      # Site footer
+│   └── page-layout.tsx # Common layout wrapper
+├── routes/             # Page components
+│   ├── home.tsx
+│   ├── why-validate.tsx
+│   ├── methods.tsx
+│   └── benefits.tsx
+├── styles/             # Global styles and theme
+│   ├── theme.css       # Design system tokens
+│   ├── global.css      # Global styles
+│   └── tokens/         # Design tokens
+└── routes.ts           # Route configuration
 ```
+
+## License
+
+All rights reserved.
